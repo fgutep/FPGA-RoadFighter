@@ -32,8 +32,10 @@ module BB_SYSTEM (
 	BB_SYSTEM_CLOCK_50,
 	BB_SYSTEM_RESET_InHigh,
 	BB_SYSTEM_startButton_InLow, 
-	BB_SYSTEM_leftButton_InLow,
-	BB_SYSTEM_rightButton_InLow
+	BB_SYSTEM_leftButtonP0_InLow,
+	BB_SYSTEM_rightButtonP0_InLow,
+	BB_SYSTEM_leftButtonP1_InLow,
+	BB_SYSTEM_rightButtonP1_InLow
 );
 //=======================================================
 //  PARAMETER declarations
@@ -41,13 +43,13 @@ module BB_SYSTEM (
  parameter DATAWIDTH_BUS = 8;
  parameter PRESCALER_DATAWIDTH = 23;
  parameter DISPLAY_DATAWIDTH = 12;
- 
- parameter DATA_FIXED_INITREGPOINT_7 = 8'b00010000;
- parameter DATA_FIXED_INITREGPOINT_6 = 8'b00111000;
- parameter DATA_FIXED_INITREGPOINT_5 = 8'b01111100;
- parameter DATA_FIXED_INITREGPOINT_4 = 8'b01111100;
- parameter DATA_FIXED_INITREGPOINT_3 = 8'b00111000;
- parameter DATA_FIXED_INITREGPOINT_2 = 8'b00010000;
+
+ parameter DATA_FIXED_INITREGPOINT_7 = 8'b00000000;
+ parameter DATA_FIXED_INITREGPOINT_6 = 8'b00000000;
+ parameter DATA_FIXED_INITREGPOINT_5 = 8'b00000000;
+ parameter DATA_FIXED_INITREGPOINT_4 = 8'b00000000;
+ parameter DATA_FIXED_INITREGPOINT_3 = 8'b00000000;
+ parameter DATA_FIXED_INITREGPOINT_2 = 8'b00000000;
  parameter DATA_FIXED_INITREGPOINT_1 = 8'b00000000;
  parameter DATA_FIXED_INITREGPOINT_0 = 8'b00010000;
  
@@ -72,8 +74,37 @@ input		BB_SYSTEM_rightButton_InLow;
 //=======================================================
 // BUTTONs
 wire 	BB_SYSTEM_startButton_InLow_cwire;
-wire 	BB_SYSTEM_leftButton_InLow_cwire;
-wire 	BB_SYSTEM_rightButton_InLow_cwire;
+wire 	BB_SYSTEM_leftButtonP0_InLow_cwire;
+wire 	BB_SYSTEM_rightButtonP0_InLow_cwire;
+wire 	BB_SYSTEM_leftButtonP1_InLow_cwire;
+wire 	BB_SYSTEM_rightButtonP1_InLow_cwire;
+// - Wires para Stamemachine Punto POINT #TODO
+wire	STATEMACHINEPOINT_clear_cwire;
+wire	STATEMACHINEPOINT_load0_cwire;
+wire	STATEMACHINEPOINT_load1_cwire;
+wire	[1:0] STATEMACHINEPOINT_shiftselection_cwire;
+wire [DATAWIDTH_BUS-1:0] RegPOINTTYPE_2_POINTMATRIX_data7_Out;
+
+//BACKGROUNG PARA P0 #TODO
+wire [DATAWIDTH_BUS-1:0] RegBACKGTYPE_2_BACKGMATRIX_data7_Out;
+wire [DATAWIDTH_BUS-1:0] RegBACKGTYPE_2_BACKGMATRIX_data6_Out;
+wire [DATAWIDTH_BUS-1:0] RegBACKGTYPE_2_BACKGMATRIX_data5_Out;
+wire [DATAWIDTH_BUS-1:0] RegBACKGTYPE_2_BACKGMATRIX_data4_Out;
+wire [DATAWIDTH_BUS-1:0] RegBACKGTYPE_2_BACKGMATRIX_data3_Out;
+wire [DATAWIDTH_BUS-1:0] RegBACKGTYPE_2_BACKGMATRIX_data2_Out;
+wire [DATAWIDTH_BUS-1:0] RegBACKGTYPE_2_BACKGMATRIX_data1_Out;
+wire [DATAWIDTH_BUS-1:0] RegBACKGTYPE_2_BACKGMATRIX_data0_Out;
+
+wire [PRESCALER_DATAWIDTH-1:0] upSPEEDCOUNTER_data_BUS_wire;
+wire SPEEDCOMPARATOR_2_STATEMACHINEBACKG_T0_cwire;
+wire STATEMACHINEBACKG_clear_cwire;
+wire STATEMACHINEBACKG_load_cwire;
+wire [1:0] STATEMACHINEBACKG_shiftselection_cwire;
+wire STATEMACHINEBACKG_upcount_cwire;
+
+//BOTTOMSIDE COMPARATOR
+wire BOTTOMSIDECOMPARATOR_2_STATEMACHINEBACKG_bottomside_cwire;
+
 
 // GAME
 wire [DATAWIDTH_BUS-1:0] regGAME_data7_wire;
@@ -84,9 +115,15 @@ wire [DATAWIDTH_BUS-1:0] regGAME_data3_wire;
 wire [DATAWIDTH_BUS-1:0] regGAME_data2_wire;
 wire [DATAWIDTH_BUS-1:0] regGAME_data1_wire;
 wire [DATAWIDTH_BUS-1:0] regGAME_data0_wire;
-
 wire 	[7:0] data_max;
 wire 	[2:0] add;
+// Velocidad y control #TODO:
+wire [PRESCALER_DATAWIDTH-1:0] upSPEEDCOUNTER_data_BUS_wire;
+wire SPEEDCOMPARATOR_2_STATEMACHINEBACKG_T0_cwire;
+wire STATEMACHINEBACKG_clear_cwire;
+wire STATEMACHINEBACKG_load_cwire;
+wire [1:0] STATEMACHINEBACKG_shiftselection_cwire;
+wire STATEMACHINEBACKG_upcount_cwire;
 
 //=======================================================
 //  Structural coding
@@ -123,7 +160,19 @@ SC_DEBOUNCE1 SC_DEBOUNCE1_u2 (
 
 
 
+//#SPEED
+SC_upSPEEDCOUNTER #(.upSPEEDCOUNTER_DATAWIDTH(PRESCALER_DATAWIDTH)) SC_upSPEEDCOUNTER_u0 (
+// port map - connection between master ports and signals/registers   
+	.SC_upSPEEDCOUNTER_data_OutBUS(upSPEEDCOUNTER_data_BUS_wire), // Salida de 23'b de RegCounter
+	.SC_upSPEEDCOUNTER_CLOCK_50(BB_SYSTEM_CLOCK_50),
+	.SC_upSPEEDCOUNTER_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
+	.SC_upSPEEDCOUNTER_upcount_InLow(STATEMACHINEBACKG_upcount_cwire)
+);
 
+CC_SPEEDCOMPARATOR #(.SPEEDCOMPARATOR_DATAWIDTH(PRESCALER_DATAWIDTH)) CC_SPEEDCOMPARATOR_u0 (
+	.CC_SPEEDCOMPARATOR_T0_OutLow(SPEEDCOMPARATOR_2_STATEMACHINEBACKG_T0_cwire), // Entrada de 23'b de RegCounter
+	.CC_SPEEDCOMPARATOR_data_InBUS(upSPEEDCOUNTER_data_BUS_wire)
+);
 //######################################################################
 //#	TO LED MATRIZ: VISUALIZATION
 //######################################################################
