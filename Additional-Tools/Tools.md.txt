@@ -1,0 +1,1 @@
+Led Planner es una herramienta que permite generar el código en bits para cada fila trabajándolo desde un UI.
