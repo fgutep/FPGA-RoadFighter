@@ -29,8 +29,10 @@ module BB_SYSTEM (
 	BB_SYSTEM_CLOCK_50,
 	BB_SYSTEM_RESET_InHigh,
 	BB_SYSTEM_startButton_InLow, 
-	BB_SYSTEM_leftButton_InLow,
-	BB_SYSTEM_rightButton_InLow
+	BB_SYSTEM_leftButton1_InLow,
+	BB_SYSTEM_rightButton1_InLow,
+	BB_SYSTEM_leftButton2_InLow,
+	BB_SYSTEM_rightButton2_InLow
 );
 //=======================================================
 //  PARAMETER declarations
@@ -51,15 +53,19 @@ output		BB_SYSTEM_max7219CLK_Out;
 input		BB_SYSTEM_CLOCK_50;
 input		BB_SYSTEM_RESET_InHigh;
 input		BB_SYSTEM_startButton_InLow;
-input		BB_SYSTEM_leftButton_InLow;
-input		BB_SYSTEM_rightButton_InLow;
+input		BB_SYSTEM_leftButton1_InLow;
+input		BB_SYSTEM_rightButton1_InLow;
+input		BB_SYSTEM_leftButton2_InLow;
+input		BB_SYSTEM_rightButton2_InLow;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 // BUTTONs
 wire 	BB_SYSTEM_startButton_InLow_cwire;
-wire 	BB_SYSTEM_leftButton_InLow_cwire;
-wire 	BB_SYSTEM_rightButton_InLow_cwire;
+wire 	BB_SYSTEM_leftButton1_InLow_cwire;
+wire 	BB_SYSTEM_rightButton1_InLow_cwire;
+wire 	BB_SYSTEM_leftButton2_InLow_cwire;
+wire 	BB_SYSTEM_rightButton2_InLow_cwire;
 
 //POINT
 wire	STATEMACHINEPOINT_clear_cwire;
@@ -104,19 +110,34 @@ SC_DEBOUNCE1 SC_DEBOUNCE1_u0 (
 );
 SC_DEBOUNCE1 SC_DEBOUNCE1_u1 (
 // port map - connection between master ports and signals/registers   
-	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_leftButton_InLow_cwire),
+	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_leftButton1_InLow_cwire),
 	.SC_DEBOUNCE1_CLOCK_50(BB_SYSTEM_CLOCK_50),
 	.SC_DEBOUNCE1_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
-	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_leftButton_InLow)
+	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_leftButton1_InLow)
 );
 SC_DEBOUNCE1 SC_DEBOUNCE1_u2 (
 // port map - connection between master ports and signals/registers   
-	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_rightButton_InLow_cwire),
+	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_rightButton1_InLow_cwire),
 	.SC_DEBOUNCE1_CLOCK_50(BB_SYSTEM_CLOCK_50),
 	.SC_DEBOUNCE1_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
-	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_rightButton_InLow)
+	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_rightButton1_InLow)
 );
 
+SC_DEBOUNCE1 SC_DEBOUNCE1_u3 (
+// port map - connection between master ports and signals/registers   
+	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_rightButton2_InLow_cwire),
+	.SC_DEBOUNCE1_CLOCK_50(BB_SYSTEM_CLOCK_50),
+	.SC_DEBOUNCE1_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
+	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_rightButton2_InLow)
+);
+
+SC_DEBOUNCE1 SC_DEBOUNCE1_u4 (
+// port map - connection between master ports and signals/registers   
+	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_leftButton2_InLow_cwire),
+	.SC_DEBOUNCE1_CLOCK_50(BB_SYSTEM_CLOCK_50),
+	.SC_DEBOUNCE1_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
+	.SC_DEBOUNCE1_button_In(~BB_SYSTEM_leftButton2_InLow)
+);
 //######################################################################
 //#	POINT
 //######################################################################
@@ -139,8 +160,8 @@ SC_STATEMACHINEPOINT SC_STATEMACHINEPOINT_u0 (
 	.SC_STATEMACHINEPOINT_CLOCK_50(BB_SYSTEM_CLOCK_50),
 	.SC_STATEMACHINEPOINT_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
 	.SC_STATEMACHINEPOINT_startButton_InLow(BB_SYSTEM_startButton_InLow_cwire), 
-	.SC_STATEMACHINEPOINT_leftButton_InLow(BB_SYSTEM_leftButton_InLow_cwire), 
-	.SC_STATEMACHINEPOINT_rightButton_InLow(BB_SYSTEM_rightButton_InLow_cwire), 
+	.SC_STATEMACHINEPOINT_leftButton_InLow(BB_SYSTEM_leftButton1_InLow_cwire), 
+	.SC_STATEMACHINEPOINT_rightButton_InLow(BB_SYSTEM_rightButton1_InLow_cwire), 
 	.SC_STATEMACHINEPOINT_sidecomparator_InLow(SIDECOMPARATOR_2_STATEMACHINEBACKG_side_cwire)
 );
 

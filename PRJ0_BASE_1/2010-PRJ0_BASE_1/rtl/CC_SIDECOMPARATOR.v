@@ -41,7 +41,9 @@ input 	[SIDECOMPARATOR_DATAWIDTH-1:0] CC_SIDECOMPARATOR_data_InBUS;
 //=======================================================
 always @(*)
 begin
-	if( CC_SIDECOMPARATOR_data_InBUS == 8'b10000000 | CC_SIDECOMPARATOR_data_InBUS == 8'b00010000)
+	if (CC_SIDECOMPARATOR_data_InBUS == 4'b1000)
+		CC_SIDECOMPARATOR_side_OutLow = 1'b0;
+	else if (CC_SIDECOMPARATOR_data_InBUS == 4'b0001)
 		CC_SIDECOMPARATOR_side_OutLow = 1'b0;
 	else 
 		CC_SIDECOMPARATOR_side_OutLow = 1'b1;
