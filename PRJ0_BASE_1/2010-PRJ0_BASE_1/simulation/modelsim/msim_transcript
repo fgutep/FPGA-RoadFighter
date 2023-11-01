@@ -1,0 +1,148 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do BB_SYSTEM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_upCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:15 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_upCOUNTER.v 
+# -- Compiling module SC_upCOUNTER
+# 
+# Top level modules:
+# 	SC_upCOUNTER
+# End time: 22:14:15 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_STATEMACHINEPOINT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:15 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_STATEMACHINEPOINT.v 
+# -- Compiling module SC_STATEMACHINEPOINT
+# 
+# Top level modules:
+# 	SC_STATEMACHINEPOINT
+# End time: 22:14:15 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_RegSHIFTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:15 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_RegSHIFTER.v 
+# -- Compiling module SC_RegSHIFTER
+# 
+# Top level modules:
+# 	SC_RegSHIFTER
+# End time: 22:14:15 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SIDECOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:15 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SIDECOMPARATOR.v 
+# -- Compiling module CC_SIDECOMPARATOR
+# 
+# Top level modules:
+# 	CC_SIDECOMPARATOR
+# End time: 22:14:15 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SEVENSEG1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:15 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SEVENSEG1.v 
+# -- Compiling module CC_SEVENSEG1
+# 
+# Top level modules:
+# 	CC_SEVENSEG1
+# End time: 22:14:15 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:16 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v 
+# -- Compiling module CC_BIN2BCD1
+# 
+# Top level modules:
+# 	CC_BIN2BCD1
+# End time: 22:14:16 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/shift_reg_start_done.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:16 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/shift_reg_start_done.v 
+# -- Compiling module shift_reg_start_done
+# 
+# Top level modules:
+# 	shift_reg_start_done
+# End time: 22:14:16 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:16 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v 
+# -- Compiling module matrix_ctrl
+# 
+# Top level modules:
+# 	matrix_ctrl
+# End time: 22:14:16 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_DEBOUNCE1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:16 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_DEBOUNCE1.v 
+# -- Compiling module SC_DEBOUNCE1
+# 
+# Top level modules:
+# 	SC_DEBOUNCE1
+# End time: 22:14:16 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1 {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:16 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v 
+# -- Compiling module BB_SYSTEM
+# 
+# Top level modules:
+# 	BB_SYSTEM
+# End time: 22:14:16 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/simulation/modelsim {C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/simulation/modelsim/TB_SYSTEM.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:16 on Oct 27,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/simulation/modelsim" C:/Users/Camilo/Downloads/PRJ0_BASE_1/2010-PRJ0_BASE_1/simulation/modelsim/TB_SYSTEM.vt 
+# -- Compiling module TB_SYSTEM
+# 
+# Top level modules:
+# 	TB_SYSTEM
+# End time: 22:14:16 on Oct 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
+# Start time: 22:14:16 on Oct 27,2023
+# Loading work.TB_SYSTEM
+# Loading work.BB_SYSTEM
+# Loading work.SC_DEBOUNCE1
+# Loading work.SC_RegSHIFTER
+# Loading work.SC_STATEMACHINEPOINT
+# Loading work.CC_SIDECOMPARATOR
+# Loading work.matrix_ctrl
+# Loading work.shift_reg_start_done
+# Loading work.CC_BIN2BCD1
+# Loading work.CC_SEVENSEG1
+# Loading work.SC_upCOUNTER
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# End time: 22:16:24 on Oct 27,2023, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 0
