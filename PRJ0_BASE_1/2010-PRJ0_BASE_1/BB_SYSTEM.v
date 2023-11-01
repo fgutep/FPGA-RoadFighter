@@ -80,6 +80,9 @@ wire [DATAWIDTH_BUS-1:0] regGAME_data3_wire;
 wire [DATAWIDTH_BUS-1:0] regGAME_data2_wire;
 wire [DATAWIDTH_BUS-1:0] regGAME_data1_wire;
 wire [DATAWIDTH_BUS-1:0] regGAME_data0_wire;
+// Background
+wire 	REGRANDOM_BUS_RegBackground;
+
 
 // To Matrix
 wire 	[7:0] data_max;
@@ -142,6 +145,17 @@ SC_STATEMACHINEPOINT SC_STATEMACHINEPOINT_u0 (
 	.SC_STATEMACHINEPOINT_leftButton_InLow(BB_SYSTEM_leftButton_InLow_cwire), 
 	.SC_STATEMACHINEPOINT_rightButton_InLow(BB_SYSTEM_rightButton_InLow_cwire), 
 	.SC_STATEMACHINEPOINT_sidecomparator_InLow(SIDECOMPARATOR_2_STATEMACHINEBACKG_side_cwire)
+);
+
+//######################################################################
+//#	BACKGROUND VISUALIZATION
+//######################################################################
+
+SC_RegRANDOM #(.RegRANDOM_DATAWIDTH=8) SC_RegRANDOM_u0 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegRANDOM_data_OutBUS(REGRANDOM_BUS_RegBackground),
+	.SC_RegSHIFTER_CLOCK_50(BB_SYSTEM_CLOCK_50),
+	.SC_RegSHIFTER_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
 );
 
 //######################################################################
