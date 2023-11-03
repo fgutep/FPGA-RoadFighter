@@ -19,7 +19,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module SC_RegRANDOM #(parameter RegRANDOM_DATAWIDTH=4)(
+module SC_RegRANDOM #(parameter RegRANDOM_DATAWIDTH=8)(
 	//////////// OUTPUTS //////////
 	SC_RegRANDOM_data_OutBUS,
 	//////////// INPUTS //////////
