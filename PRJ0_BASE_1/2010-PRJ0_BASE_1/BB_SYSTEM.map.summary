@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Tue Oct 31 13:55:54 2023
+Analysis & Synthesis Status : Successful - Fri Nov 03 15:39:48 2023
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : BB_SYSTEM
 Top-level Entity Name : BB_SYSTEM
@@ -7,7 +7,7 @@ Total logic elements : 256
     Total combinational functions : 253
     Dedicated logic registers : 132
 Total registers : 132
-Total pins : 20
+Total pins : 22
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

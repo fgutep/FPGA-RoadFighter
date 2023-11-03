@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BB_SYSTEM
-Tue Oct 31 13:55:54 2023
+Fri Nov 03 15:39:48 2023
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -24,17 +24,21 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
  16. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u0
  17. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u1
  18. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u2
- 19. Parameter Settings for User Entity Instance: SC_RegSHIFTER:SC_RegPOINTTYPE_u0
- 20. Parameter Settings for User Entity Instance: CC_SIDECOMPARATOR:CC_SIDECOMPARATOR_u0
- 21. Parameter Settings for User Entity Instance: matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0
- 22. Parameter Settings for User Entity Instance: SC_upCOUNTER:SC_upCOUNTER_u0
- 23. Port Connectivity Checks: "matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0"
- 24. Port Connectivity Checks: "matrix_ctrl:matrix_ctrl_unit_0"
- 25. Port Connectivity Checks: "SC_RegSHIFTER:SC_RegPOINTTYPE_u0"
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
- 29. Analysis & Synthesis Suppressed Messages
+ 19. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u3
+ 20. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u4
+ 21. Parameter Settings for User Entity Instance: SC_RegSHIFTER:SC_RegPOINTTYPE_u0
+ 22. Parameter Settings for User Entity Instance: CC_SIDECOMPARATOR:CC_SIDECOMPARATOR_u0
+ 23. Parameter Settings for User Entity Instance: matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0
+ 24. Parameter Settings for User Entity Instance: SC_upCOUNTER:SC_upCOUNTER_u0
+ 25. Port Connectivity Checks: "matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0"
+ 26. Port Connectivity Checks: "matrix_ctrl:matrix_ctrl_unit_0"
+ 27. Port Connectivity Checks: "SC_RegSHIFTER:SC_RegPOINTTYPE_u0"
+ 28. Port Connectivity Checks: "SC_DEBOUNCE1:SC_DEBOUNCE1_u4"
+ 29. Port Connectivity Checks: "SC_DEBOUNCE1:SC_DEBOUNCE1_u3"
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+ 33. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -61,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 31 13:55:54 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 03 15:39:48 2023       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
@@ -70,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 253                                         ;
 ;     Dedicated logic registers      ; 132                                         ;
 ; Total registers                    ; 132                                         ;
-; Total pins                         ; 20                                          ;
+; Total pins                         ; 22                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -182,22 +186,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
-; rtl/SC_upCOUNTER.v               ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_upCOUNTER.v         ;         ;
-; rtl/SC_STATEMACHINEPOINT.v       ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_STATEMACHINEPOINT.v ;         ;
-; rtl/SC_RegSHIFTER.v              ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_RegSHIFTER.v        ;         ;
-; rtl/CC_SIDECOMPARATOR.v          ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SIDECOMPARATOR.v    ;         ;
-; rtl/CC_SEVENSEG1.v               ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SEVENSEG1.v         ;         ;
-; rtl/CC_BIN2BCD1.v                ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v          ;         ;
-; rtl/shift_reg_start_done.v       ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/shift_reg_start_done.v ;         ;
-; rtl/max7219_ctrl.v               ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v         ;         ;
-; rtl/SC_DEBOUNCE1.v               ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_DEBOUNCE1.v         ;         ;
-; BB_SYSTEM.v                      ; yes             ; User Verilog HDL File  ; C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v                ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+; rtl/SC_upCOUNTER.v               ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_upCOUNTER.v         ;         ;
+; rtl/SC_STATEMACHINEPOINT.v       ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_STATEMACHINEPOINT.v ;         ;
+; rtl/SC_RegSHIFTER.v              ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_RegSHIFTER.v        ;         ;
+; rtl/CC_SIDECOMPARATOR.v          ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SIDECOMPARATOR.v    ;         ;
+; rtl/CC_SEVENSEG1.v               ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SEVENSEG1.v         ;         ;
+; rtl/CC_BIN2BCD1.v                ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v          ;         ;
+; rtl/shift_reg_start_done.v       ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/shift_reg_start_done.v ;         ;
+; rtl/max7219_ctrl.v               ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v         ;         ;
+; rtl/SC_DEBOUNCE1.v               ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_DEBOUNCE1.v         ;         ;
+; BB_SYSTEM.v                      ; yes             ; User Verilog HDL File  ; C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v                ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------+
@@ -221,14 +225,14 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 132                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
-; I/O pins                                    ; 20                       ;
+; I/O pins                                    ; 22                       ;
 ;                                             ;                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; BB_SYSTEM_CLOCK_50~input ;
 ; Maximum fan-out                             ; 132                      ;
-; Total fan-out                               ; 1287                     ;
-; Average fan-out                             ; 3.03                     ;
+; Total fan-out                               ; 1289                     ;
+; Average fan-out                             ; 3.00                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -237,7 +241,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Entity Name          ; Library Name ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+----------------------+--------------+
-; |BB_SYSTEM                                               ; 253 (4)             ; 132 (0)                   ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |BB_SYSTEM                                                                                 ; BB_SYSTEM            ; work         ;
+; |BB_SYSTEM                                               ; 253 (4)             ; 132 (0)                   ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |BB_SYSTEM                                                                                 ; BB_SYSTEM            ; work         ;
 ;    |CC_BIN2BCD1:CC_BIN2BCD1_u0|                          ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CC_BIN2BCD1:CC_BIN2BCD1_u0                                                      ; CC_BIN2BCD1          ; work         ;
 ;    |CC_SEVENSEG1:CC_SEVENSEG1_u0|                        ; 41 (41)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CC_SEVENSEG1:CC_SEVENSEG1_u0                                                    ; CC_SEVENSEG1         ; work         ;
 ;    |CC_SIDECOMPARATOR:CC_SIDECOMPARATOR_u0|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CC_SIDECOMPARATOR:CC_SIDECOMPARATOR_u0                                          ; CC_SIDECOMPARATOR    ; work         ;
@@ -366,10 +370,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0|cnt_reg[4] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0|cnt_reg[5] ;
 ; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0|r_reg[14]  ;
 ; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0|r_reg[11]  ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |BB_SYSTEM|SC_RegSHIFTER:SC_RegPOINTTYPE_u0|RegSHIFTER_Register[1]                                    ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |BB_SYSTEM|SC_RegSHIFTER:SC_RegPOINTTYPE_u0|RegSHIFTER_Register[2]                                    ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |BB_SYSTEM|CC_SEVENSEG1:CC_SEVENSEG1_u0|Mux0                                                          ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|state_reg                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
@@ -409,6 +413,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +---------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u2 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 11    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u3 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 11    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u4 ;
 +----------------+-------+--------------------------------------------------+
 ; Parameter Name ; Value ; Type                                             ;
 +----------------+-------+--------------------------------------------------+
@@ -489,12 +513,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------------------+-------+----------+--------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_DEBOUNCE1:SC_DEBOUNCE1_u4"                                                                          ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                    ; Type   ; Severity ; Details                                                                             ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_DEBOUNCE1_button_Out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_DEBOUNCE1:SC_DEBOUNCE1_u3"                                                                          ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                    ; Type   ; Severity ; Details                                                                             ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_DEBOUNCE1_button_Out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 20                          ;
+; boundary_port         ; 22                          ;
 ; cycloneiii_ff         ; 132                         ;
 ;     CLR               ; 27                          ;
 ;     ENA CLR           ; 38                          ;
@@ -533,73 +575,76 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue Oct 31 13:55:43 2023
+    Info: Processing started: Fri Nov 03 15:39:37 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_upcounter.v
-    Info (12023): Found entity 1: SC_upCOUNTER File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_upCOUNTER.v Line: 21
+    Info (12023): Found entity 1: SC_upCOUNTER File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_upCOUNTER.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_statemachinepoint.v
-    Info (12023): Found entity 1: SC_STATEMACHINEPOINT File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_STATEMACHINEPOINT.v Line: 21
+    Info (12023): Found entity 1: SC_STATEMACHINEPOINT File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_STATEMACHINEPOINT.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regshifter.v
-    Info (12023): Found entity 1: SC_RegSHIFTER File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_RegSHIFTER.v Line: 21
+    Info (12023): Found entity 1: SC_RegSHIFTER File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_RegSHIFTER.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_sidecomparator.v
-    Info (12023): Found entity 1: CC_SIDECOMPARATOR File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SIDECOMPARATOR.v Line: 21
+    Info (12023): Found entity 1: CC_SIDECOMPARATOR File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SIDECOMPARATOR.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_sevenseg1.v
-    Info (12023): Found entity 1: CC_SEVENSEG1 File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SEVENSEG1.v Line: 24
+    Info (12023): Found entity 1: CC_SEVENSEG1 File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_SEVENSEG1.v Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_bin2bcd1.v
-    Info (12023): Found entity 1: CC_BIN2BCD1 File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v Line: 19
+    Info (12023): Found entity 1: CC_BIN2BCD1 File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/shift_reg_start_done.v
-    Info (12023): Found entity 1: shift_reg_start_done File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/shift_reg_start_done.v Line: 34
+    Info (12023): Found entity 1: shift_reg_start_done File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/shift_reg_start_done.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/max7219_ctrl.v
-    Info (12023): Found entity 1: matrix_ctrl File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 18
+    Info (12023): Found entity 1: matrix_ctrl File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_debounce1.v
-    Info (12023): Found entity 1: SC_DEBOUNCE1 File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_DEBOUNCE1.v Line: 44
+    Info (12023): Found entity 1: SC_DEBOUNCE1 File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_DEBOUNCE1.v Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file bb_system.v
-    Info (12023): Found entity 1: BB_SYSTEM File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 21
+    Info (12023): Found entity 1: BB_SYSTEM File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 21
 Info (12127): Elaborating entity "BB_SYSTEM" for the top level hierarchy
-Info (12128): Elaborating entity "SC_DEBOUNCE1" for hierarchy "SC_DEBOUNCE1:SC_DEBOUNCE1_u0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 104
-Warning (10230): Verilog HDL assignment warning at SC_DEBOUNCE1.v(70): truncated value with size 32 to match size of target (11) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_DEBOUNCE1.v Line: 70
-Info (12128): Elaborating entity "SC_RegSHIFTER" for hierarchy "SC_RegSHIFTER:SC_RegPOINTTYPE_u0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 132
-Info (12128): Elaborating entity "SC_STATEMACHINEPOINT" for hierarchy "SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 145
-Info (12128): Elaborating entity "CC_SIDECOMPARATOR" for hierarchy "CC_SIDECOMPARATOR:CC_SIDECOMPARATOR_u0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 153
-Info (12128): Elaborating entity "matrix_ctrl" for hierarchy "matrix_ctrl:matrix_ctrl_unit_0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 185
-Warning (10036): Verilog HDL or VHDL warning at max7219_ctrl.v(58): object "Trig_SignalNEG" assigned a value but never read File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 58
-Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(50): truncated value with size 32 to match size of target (4) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 50
-Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(51): truncated value with size 32 to match size of target (4) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 51
-Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(260): truncated value with size 32 to match size of target (4) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 260
-Warning (10240): Verilog HDL Always Construct warning at max7219_ctrl.v(154): inferring latch(es) for variable "ctrl_sr", which holds its previous value in one or more paths through the always construct File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 154
-Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(278): truncated value with size 32 to match size of target (3) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 278
-Info (10041): Inferred latch for "ctrl_sr[0]" at max7219_ctrl.v(154) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 154
-Info (10041): Inferred latch for "ctrl_sr[1]" at max7219_ctrl.v(154) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 154
-Info (12128): Elaborating entity "shift_reg_start_done" for hierarchy "matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 109
-Warning (10230): Verilog HDL assignment warning at shift_reg_start_done.v(69): truncated value with size 32 to match size of target (16) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/shift_reg_start_done.v Line: 69
-Info (12128): Elaborating entity "CC_BIN2BCD1" for hierarchy "CC_BIN2BCD1:CC_BIN2BCD1_u0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 218
-Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(36): truncated value with size 32 to match size of target (4) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v Line: 36
-Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(42): truncated value with size 32 to match size of target (4) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v Line: 42
-Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(44): truncated value with size 32 to match size of target (4) File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v Line: 44
-Info (12128): Elaborating entity "CC_SEVENSEG1" for hierarchy "CC_SEVENSEG1:CC_SEVENSEG1_u0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 237
-Info (12128): Elaborating entity "SC_upCOUNTER" for hierarchy "SC_upCOUNTER:SC_upCOUNTER_u0" File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 245
+Info (12128): Elaborating entity "SC_DEBOUNCE1" for hierarchy "SC_DEBOUNCE1:SC_DEBOUNCE1_u0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 110
+Warning (10230): Verilog HDL assignment warning at SC_DEBOUNCE1.v(70): truncated value with size 32 to match size of target (11) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/SC_DEBOUNCE1.v Line: 70
+Info (12128): Elaborating entity "SC_RegSHIFTER" for hierarchy "SC_RegSHIFTER:SC_RegPOINTTYPE_u0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 153
+Info (12128): Elaborating entity "SC_STATEMACHINEPOINT" for hierarchy "SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 166
+Info (12128): Elaborating entity "CC_SIDECOMPARATOR" for hierarchy "CC_SIDECOMPARATOR:CC_SIDECOMPARATOR_u0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 174
+Info (12128): Elaborating entity "matrix_ctrl" for hierarchy "matrix_ctrl:matrix_ctrl_unit_0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 206
+Warning (10036): Verilog HDL or VHDL warning at max7219_ctrl.v(58): object "Trig_SignalNEG" assigned a value but never read File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 58
+Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(50): truncated value with size 32 to match size of target (4) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 50
+Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(51): truncated value with size 32 to match size of target (4) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 51
+Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(260): truncated value with size 32 to match size of target (4) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 260
+Warning (10240): Verilog HDL Always Construct warning at max7219_ctrl.v(154): inferring latch(es) for variable "ctrl_sr", which holds its previous value in one or more paths through the always construct File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 154
+Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(278): truncated value with size 32 to match size of target (3) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 278
+Info (10041): Inferred latch for "ctrl_sr[0]" at max7219_ctrl.v(154) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 154
+Info (10041): Inferred latch for "ctrl_sr[1]" at max7219_ctrl.v(154) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 154
+Info (12128): Elaborating entity "shift_reg_start_done" for hierarchy "matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/max7219_ctrl.v Line: 109
+Warning (10230): Verilog HDL assignment warning at shift_reg_start_done.v(69): truncated value with size 32 to match size of target (16) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/shift_reg_start_done.v Line: 69
+Info (12128): Elaborating entity "CC_BIN2BCD1" for hierarchy "CC_BIN2BCD1:CC_BIN2BCD1_u0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 239
+Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(36): truncated value with size 32 to match size of target (4) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v Line: 36
+Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(42): truncated value with size 32 to match size of target (4) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v Line: 42
+Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(44): truncated value with size 32 to match size of target (4) File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/rtl/CC_BIN2BCD1.v Line: 44
+Info (12128): Elaborating entity "CC_SEVENSEG1" for hierarchy "CC_SEVENSEG1:CC_SEVENSEG1_u0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 258
+Info (12128): Elaborating entity "SC_upCOUNTER" for hierarchy "SC_upCOUNTER:SC_upCOUNTER_u0" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 266
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[7]" is stuck at GND File: C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[7]" is stuck at GND File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 47
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 11 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.map.smsg
+Info (144001): Generated suppressed messages file C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 276 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "BB_SYSTEM_leftButton2_InLow" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 58
+    Warning (15610): No output dependent on input pin "BB_SYSTEM_rightButton2_InLow" File: C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.v Line: 59
+Info (21057): Implemented 278 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
     Info (21059): Implemented 15 output pins
     Info (21061): Implemented 256 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Tue Oct 31 13:55:54 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Fri Nov 03 15:39:48 2023
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/PRJ0_ledMATRIZ-P1-Quartus191/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.map.smsg.
+The suppressed messages can be found in C:/PROYECTO DE SED/FPGA-RoadFighter/PRJ0_BASE_1/2010-PRJ0_BASE_1/BB_SYSTEM.map.smsg.
 
 

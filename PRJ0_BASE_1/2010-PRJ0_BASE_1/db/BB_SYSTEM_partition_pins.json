@@ -68,7 +68,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "BB_SYSTEM_leftButton_InLow",
+					"name" : "BB_SYSTEM_leftButton1_InLow",
 					"strict" : false
 				},
 				{
@@ -76,7 +76,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "BB_SYSTEM_rightButton_InLow",
+					"name" : "BB_SYSTEM_rightButton1_InLow",
 					"strict" : false
 				}
 			]

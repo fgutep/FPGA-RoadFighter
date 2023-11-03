@@ -1,5 +1,5 @@
 Flow report for BB_SYSTEM
-Tue Oct 31 13:56:07 2023
+Fri Nov 03 15:40:02 2023
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Oct 31 13:56:07 2023       ;
+; Flow Status                        ; Successful - Fri Nov 03 15:40:02 2023       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 254 / 22,320 ( 1 % )                        ;
 ;     Dedicated logic registers      ; 132 / 22,320 ( < 1 % )                      ;
 ; Total registers                    ; 132                                         ;
-; Total pins                         ; 20 / 154 ( 13 % )                           ;
+; Total pins                         ; 22 / 154 ( 14 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/31/2023 13:55:44 ;
+; Start date & time ; 11/03/2023 15:39:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BB_SYSTEM           ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 2499181066595.169877854417820          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 2499181066595.169904397809272          ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TB_SYSTEM      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_SYSTEM                              ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR        ; simulation/modelsim                    ; --            ; --          ; eda_simulation ;
@@ -103,12 +103,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4766 MB             ; 00:00:15                           ;
-; Fitter               ; 00:00:05     ; 1.0                     ; 5532 MB             ; 00:00:04                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4688 MB             ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4764 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 5531 MB             ; 00:00:04                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4687 MB             ; 00:00:01                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4791 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4652 MB             ; 00:00:01                           ;
-; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:22                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4653 MB             ; 00:00:01                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
