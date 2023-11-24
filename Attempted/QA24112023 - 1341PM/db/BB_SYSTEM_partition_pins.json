@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "BB_SYSTEM_display_OutBUS[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_display_OutBUS[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_display_OutBUS[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_display_OutBUS[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_max7219DIN_Out",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_max7219NCS_Out",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_max7219CLK_Out",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_RESET_InHigh",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_rightButton_InLow1",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_startButton_InLow",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_leftButton_InLow1",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_leftButton_InLow",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_rightButton_InLow",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

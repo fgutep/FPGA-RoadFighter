@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/f.gutierreza/Downloads/QA161123-1305PM/QA161123-1305PM/QA161123-1225AM/QA161123/simulation/modelsim
+vBB_SYSTEM
+Z1 !s110 1700169266
+!i10b 1
+!s100 kHjL6I@mYl7ldo?H2WjYC1
+I^5^PPi_E;OBNEFj:cEnkI3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1700168595
+Z4 8BB_SYSTEM_6_1200mv_85c_slow.vo
+Z5 FBB_SYSTEM_6_1200mv_85c_slow.vo
+L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1700169266.000000
+Z8 !s107 BB_SYSTEM_6_1200mv_85c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|BB_SYSTEM_6_1200mv_85c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+n@b@b_@s@y@s@t@e@m
+vhard_block
+R1
+!i10b 1
+!s100 2H4>^8I3@THlVLn6RDP:Z0
+IA3=ocQ>:aHf1PXblK2GoP3
+R2
+R0
+R3
+R4
+R5
+L0 8534
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vTB_SYSTEM
+R1
+!i10b 1
+!s100 H]`1oLH0`F?zmRR_3QfVz2
+IX>AX<RG`YmA0HALia`ePN1
+R2
+R0
+w1700168582
+8C:/Users/f.gutierreza/Downloads/QA161123-1305PM/QA161123-1305PM/QA161123-1225AM/QA161123/simulation/modelsim/TB_SYSTEM.vt
+FC:/Users/f.gutierreza/Downloads/QA161123-1305PM/QA161123-1305PM/QA161123-1225AM/QA161123/simulation/modelsim/TB_SYSTEM.vt
+L0 19
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/f.gutierreza/Downloads/QA161123-1305PM/QA161123-1305PM/QA161123-1225AM/QA161123/simulation/modelsim/TB_SYSTEM.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/f.gutierreza/Downloads/QA161123-1305PM/QA161123-1305PM/QA161123-1225AM/QA161123/simulation/modelsim|C:/Users/f.gutierreza/Downloads/QA161123-1305PM/QA161123-1305PM/QA161123-1225AM/QA161123/simulation/modelsim/TB_SYSTEM.vt|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/f.gutierreza/Downloads/QA161123-1305PM/QA161123-1305PM/QA161123-1225AM/QA161123/simulation/modelsim
+R12
+n@t@b_@s@y@s@t@e@m

@@ -1,0 +1,80 @@
+module CC_Jugabilidad #(parameter RDATAWIDTH=4, RegBACKGTYPE_DATAWIDTH=4)(
+    //////////////// OUTPUTS //////////
+    output [RDATAWIDTH-1:0] P0_CC_Jugabilidad_data_OutBUS,
+    output [RDATAWIDTH-1:0] P1_CC_Jugabilidad_data_OutBUS,
+    //////////////// INPUTS //////////
+    input CC_Jugabilidad_CLOCK_50,
+    input CC_Jugabilidad_RESET_InHigh,
+    input CC_Jugabilidad_clear_InLow, 
+    input CC_Jugabilidad_load_InLow, 
+    input [RDATAWIDTH-1:0] P0_CC_Jugabilidad_data_InBUS,
+    input [RDATAWIDTH-1:0] P1_CC_Jugabilidad_data_InBUS
+);
+
+//=======================================================
+//  PORT declarations
+//=======================================================
+output [RDATAWIDTH-1:0] P0_CC_Jugabilidad_data_OutBUS;
+output [RDATAWIDTH-1:0] P1_CC_Jugabilidad_data_OutBUS;
+
+input [RDATAWIDTH-1:0] P0_CC_Jugabilidad_data_InBUS;
+input [RDATAWIDTH-1:0] P1_CC_Jugabilidad_data_InBUS;
+
+input SC_RegBACKGTYPE_CLOCK_50;
+input SC_RegBACKGTYPE_RESET_InHigh;
+input SC_RegBACKGTYPE_clear_InLow;
+input SC_RegBACKGTYPE_load_InLow;
+
+//=======================================================
+//  REG/WIRE declarations
+//=======================================================
+reg [RegBACKGTYPE_DATAWIDTH-1:0] P_0_Data_Out;
+reg [RegBACKGTYPE_DATAWIDTH-1:0] P_1_Data_Out;
+reg [RegBACKGTYPE_DATAWIDTH-1:0] P_0_Data_Processed;
+reg [RegBACKGTYPE_DATAWIDTH-1:0] P_1_Data_Processed;
+
+//=======================================================
+//  Structural coding
+//=======================================================
+// INPUT LOGIC: COMBINATIONAL
+always @(*)
+begin
+    if (SC_RegBACKGTYPE_clear_InLow == 1'b0) begin
+        P_0_Data_Processed = 4'b0000;
+        P_1_Data_Processed = 4'b0000;
+    end
+    else if (SC_RegBACKGTYPE_load_InLow == 1'b0) begin
+        if ((P0_CC_Jugabilidad_data_InBUS == 4'b1111) || (P1_CC_Jugabilidad_data_InBUS == 4'b1111)) begin
+            P_0_Data_Processed = 4'b1010;
+            P_1_Data_Processed = 4'b1010;
+        end
+        else begin
+            P_0_Data_Processed = P0_CC_Jugabilidad_data_InBUS;
+            P_1_Data_Processed = P1_CC_Jugabilidad_data_InBUS;
+        end
+    end
+    else begin
+        P_0_Data_Processed = P0_CC_Jugabilidad_data_InBUS;
+        P_1_Data_Processed = P1_CC_Jugabilidad_data_InBUS;
+    end
+end
+
+always @(posedge SC_RegBACKGTYPE_CLOCK_50 or posedge SC_RegBACKGTYPE_RESET_InHigh)
+begin
+    if (SC_RegBACKGTYPE_RESET_InHigh == 1'b1) begin
+        P_0_Data_Out <= 4'b0000;
+        P_1_Data_Out <= 4'b0000;
+    end
+    else begin
+        P_0_Data_Out <= P_0_Data_Processed;
+        P_1_Data_Out <= P_1_Data_Processed;
+    end
+end
+
+//=======================================================
+// Outputs
+//=======================================================
+assign P0_CC_Jugabilidad_data_OutBUS = P_0_Data_Out;
+assign P1_CC_Jugabilidad_data_OutBUS = P_1_Data_Out;
+
+endmodule

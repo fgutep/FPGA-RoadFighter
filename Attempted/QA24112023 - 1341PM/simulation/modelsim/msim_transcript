@@ -1,0 +1,473 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do BB_SYSTEM_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/shift_reg_start_done.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/shift_reg_start_done.v 
+# -- Compiling module shift_reg_start_done
+# 
+# Top level modules:
+# 	shift_reg_start_done
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/max7219_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/max7219_ctrl.v 
+# -- Compiling module matrix_ctrl
+# 
+# Top level modules:
+# 	matrix_ctrl
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_DEBOUNCE1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_DEBOUNCE1.v 
+# -- Compiling module SC_DEBOUNCE1
+# 
+# Top level modules:
+# 	SC_DEBOUNCE1
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM {C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM" C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v 
+# -- Compiling module BB_SYSTEM
+# 
+# Top level modules:
+# 	BB_SYSTEM
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegRANDOM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegRANDOM.v 
+# -- Compiling module SC_RegRANDOM
+# 
+# Top level modules:
+# 	SC_RegRANDOM
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v 
+# -- Compiling module SC_RegSHIFTER
+# 
+# Top level modules:
+# 	SC_RegSHIFTER
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v 
+# -- Compiling module SC_STATEMACHINEPOINT
+# 
+# Top level modules:
+# 	SC_STATEMACHINEPOINT
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEBACKG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEBACKG.v 
+# -- Compiling module SC_STATEMACHINEBACKG
+# 
+# Top level modules:
+# 	SC_STATEMACHINEBACKG
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v 
+# -- Compiling module SC_RegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_RegBACKGTYPE
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_BIN2BCD1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_BIN2BCD1.v 
+# -- Compiling module CC_BIN2BCD1
+# 
+# Top level modules:
+# 	CC_BIN2BCD1
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_SEVENSEG1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_SEVENSEG1.v 
+# -- Compiling module CC_SEVENSEG1
+# 
+# Top level modules:
+# 	CC_SEVENSEG1
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_upSPEEDCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_upSPEEDCOUNTER.v 
+# -- Compiling module SC_upSPEEDCOUNTER
+# 
+# Top level modules:
+# 	SC_upSPEEDCOUNTER
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_SPEEDCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_SPEEDCOMPARATOR.v 
+# -- Compiling module CC_SPEEDCOMPARATOR
+# 
+# Top level modules:
+# 	CC_SPEEDCOMPARATOR
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:26 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v 
+# -- Compiling module CC_Jugabilidad
+# 
+# Top level modules:
+# 	CC_Jugabilidad
+# End time: 15:36:26 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/simulation/modelsim {C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:27 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim" C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt 
+# -- Compiling module TB_SYSTEM
+# 
+# Top level modules:
+# 	TB_SYSTEM
+# End time: 15:36:27 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
+# Start time: 15:36:27 on Nov 24,2023
+# Loading work.TB_SYSTEM
+# Loading work.BB_SYSTEM
+# Loading work.SC_DEBOUNCE1
+# Loading work.SC_RegSHIFTER
+# Loading work.SC_STATEMACHINEPOINT
+# Loading work.SC_RegRANDOM
+# Loading work.SC_RegBACKGTYPE
+# Loading work.SC_upSPEEDCOUNTER
+# Loading work.CC_SPEEDCOMPARATOR
+# Loading work.SC_STATEMACHINEBACKG
+# Loading work.CC_Jugabilidad
+# Loading work.matrix_ctrl
+# Loading work.shift_reg_start_done
+# Loading work.CC_BIN2BCD1
+# Loading work.CC_SEVENSEG1
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt(57): [TFMPC] - Too few port connections. Expected 11, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt(57): [TFMPC] - Missing connection for port 'BB_SYSTEM_display_OutBUS'.
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(248): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_OutBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(248): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_InBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(259): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_STATEMACHINEPOINT_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(259): [TFMPC] - Missing connection for port 'SC_STATEMACHINEPOINT_sidecomparator_InLow'.
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(275): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_OutBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(275): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_InBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(286): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_STATEMACHINEPOINT_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(286): [TFMPC] - Missing connection for port 'SC_STATEMACHINEPOINT_sidecomparator_InLow'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(308): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegRANDOM_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegRANDOM.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(308): [TFMPC] - Missing connection for port 'SC_RegRANDOM_clear_InLow'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(389): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegBACKGTYPE_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(389): [TFMPC] - Missing connection for port 'SC_RegBACKGTYPE_data_OutBUS_2REG'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(473): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegBACKGTYPE_u10 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(473): [TFMPC] - Missing connection for port 'SC_RegBACKGTYPE_data_OutBUS_2REG'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(525): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_Jugabilidad_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(560): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_Jugabilidad_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+do TB_SYSTEM.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/shift_reg_start_done.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/shift_reg_start_done.v 
+# -- Compiling module shift_reg_start_done
+# 
+# Top level modules:
+# 	shift_reg_start_done
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/max7219_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/max7219_ctrl.v 
+# -- Compiling module matrix_ctrl
+# 
+# Top level modules:
+# 	matrix_ctrl
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_DEBOUNCE1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_DEBOUNCE1.v 
+# -- Compiling module SC_DEBOUNCE1
+# 
+# Top level modules:
+# 	SC_DEBOUNCE1
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM {C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM" C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v 
+# -- Compiling module BB_SYSTEM
+# 
+# Top level modules:
+# 	BB_SYSTEM
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegRANDOM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegRANDOM.v 
+# -- Compiling module SC_RegRANDOM
+# 
+# Top level modules:
+# 	SC_RegRANDOM
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v 
+# -- Compiling module SC_RegSHIFTER
+# 
+# Top level modules:
+# 	SC_RegSHIFTER
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v 
+# -- Compiling module SC_STATEMACHINEPOINT
+# 
+# Top level modules:
+# 	SC_STATEMACHINEPOINT
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEBACKG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEBACKG.v 
+# -- Compiling module SC_STATEMACHINEBACKG
+# 
+# Top level modules:
+# 	SC_STATEMACHINEBACKG
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v 
+# -- Compiling module SC_RegBACKGTYPE
+# 
+# Top level modules:
+# 	SC_RegBACKGTYPE
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_BIN2BCD1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_BIN2BCD1.v 
+# -- Compiling module CC_BIN2BCD1
+# 
+# Top level modules:
+# 	CC_BIN2BCD1
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_SEVENSEG1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_SEVENSEG1.v 
+# -- Compiling module CC_SEVENSEG1
+# 
+# Top level modules:
+# 	CC_SEVENSEG1
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_upSPEEDCOUNTER.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_upSPEEDCOUNTER.v 
+# -- Compiling module SC_upSPEEDCOUNTER
+# 
+# Top level modules:
+# 	SC_upSPEEDCOUNTER
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_SPEEDCOMPARATOR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:45 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_SPEEDCOMPARATOR.v 
+# -- Compiling module CC_SPEEDCOMPARATOR
+# 
+# Top level modules:
+# 	CC_SPEEDCOMPARATOR
+# End time: 15:36:45 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/rtl {C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:46 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl" C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v 
+# -- Compiling module CC_Jugabilidad
+# 
+# Top level modules:
+# 	CC_Jugabilidad
+# End time: 15:36:46 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/QA24112023\ -\ 1341PM/simulation/modelsim {C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:36:46 on Nov 24,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim" C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt 
+# -- Compiling module TB_SYSTEM
+# 
+# Top level modules:
+# 	TB_SYSTEM
+# End time: 15:36:46 on Nov 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
+# End time: 15:36:46 on Nov 24,2023, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 18
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
+# Start time: 15:36:46 on Nov 24,2023
+# Loading work.TB_SYSTEM
+# Loading work.BB_SYSTEM
+# Loading work.SC_DEBOUNCE1
+# Loading work.SC_RegSHIFTER
+# Loading work.SC_STATEMACHINEPOINT
+# Loading work.SC_RegRANDOM
+# Loading work.SC_RegBACKGTYPE
+# Loading work.SC_upSPEEDCOUNTER
+# Loading work.CC_SPEEDCOMPARATOR
+# Loading work.SC_STATEMACHINEBACKG
+# Loading work.CC_Jugabilidad
+# Loading work.matrix_ctrl
+# Loading work.shift_reg_start_done
+# Loading work.CC_BIN2BCD1
+# Loading work.CC_SEVENSEG1
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt(57): [TFMPC] - Too few port connections. Expected 11, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt(57): [TFMPC] - Missing connection for port 'BB_SYSTEM_display_OutBUS'.
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(248): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_OutBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(248): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_InBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(259): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_STATEMACHINEPOINT_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(259): [TFMPC] - Missing connection for port 'SC_STATEMACHINEPOINT_sidecomparator_InLow'.
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(275): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_OutBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(275): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_InBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(286): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_STATEMACHINEPOINT_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(286): [TFMPC] - Missing connection for port 'SC_STATEMACHINEPOINT_sidecomparator_InLow'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(308): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegRANDOM_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegRANDOM.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(308): [TFMPC] - Missing connection for port 'SC_RegRANDOM_clear_InLow'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(389): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegBACKGTYPE_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(389): [TFMPC] - Missing connection for port 'SC_RegBACKGTYPE_data_OutBUS_2REG'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(473): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegBACKGTYPE_u10 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(473): [TFMPC] - Missing connection for port 'SC_RegBACKGTYPE_data_OutBUS_2REG'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(525): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_Jugabilidad_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(560): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_Jugabilidad_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt(57): [TFMPC] - Too few port connections. Expected 11, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/simulation/modelsim/TB_SYSTEM.vt(57): [TFMPC] - Missing connection for port 'BB_SYSTEM_display_OutBUS'.
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(248): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_OutBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(248): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_InBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(259): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_STATEMACHINEPOINT_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(259): [TFMPC] - Missing connection for port 'SC_STATEMACHINEPOINT_sidecomparator_InLow'.
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(275): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_OutBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3015) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(275): [PCDPC] - Port size (8) does not match connection size (4) for port 'SC_RegSHIFTER_data_InBUS'. The port definition is at: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(286): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_STATEMACHINEPOINT_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_STATEMACHINEPOINT.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(286): [TFMPC] - Missing connection for port 'SC_STATEMACHINEPOINT_sidecomparator_InLow'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(308): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegRANDOM_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegRANDOM.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(308): [TFMPC] - Missing connection for port 'SC_RegRANDOM_clear_InLow'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(389): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegBACKGTYPE_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(389): [TFMPC] - Missing connection for port 'SC_RegBACKGTYPE_data_OutBUS_2REG'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(473): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegBACKGTYPE_u10 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/SC_RegBACKGTYPE.v
+# ** Warning: (vsim-3722) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(473): [TFMPC] - Missing connection for port 'SC_RegBACKGTYPE_data_OutBUS_2REG'.
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(525): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_Jugabilidad_u0 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v
+# ** Warning: (vsim-3017) C:/Users/fgute/Downloads/QA24112023 - 1341PM/BB_SYSTEM.v(560): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CC_Jugabilidad_u1 File: C:/Users/fgute/Downloads/QA24112023 - 1341PM/rtl/CC_Jugabilidad.v
+# Running testbench
+# End time: 15:43:43 on Nov 24,2023, Elapsed time: 0:06:57
+# Errors: 0, Warnings: 36
