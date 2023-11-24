@@ -1,0 +1,29 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/shift_reg_start_done.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_DEBOUNCE1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegRANDOM.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegSHIFTER.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_STATEMACHINEPOINT.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_STATEMACHINEBACKG.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegBACKGTYPE.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_BIN2BCD1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_SEVENSEG1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_upSPEEDCOUNTER.v}
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_SPEEDCOMPARATOR.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/simulation/modelsim {C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/simulation/modelsim/TB_SYSTEM.vt}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,1323 @@
+Analysis & Synthesis report for BB_SYSTEM
+Fri Nov 24 16:48:59 2023
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|state_reg
+  9. State Machine - |BB_SYSTEM|SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register
+ 10. State Machine - |BB_SYSTEM|SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register
+ 11. State Machine - |BB_SYSTEM|SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Register
+ 12. State Machine - |BB_SYSTEM|SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Register
+ 13. User-Specified and Inferred Latches
+ 14. Registers Removed During Synthesis
+ 15. Removed Registers Triggering Further Register Optimizations
+ 16. General Register Statistics
+ 17. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 18. Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM
+ 19. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u0
+ 20. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u1
+ 21. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u2
+ 22. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u3
+ 23. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u4
+ 24. Parameter Settings for User Entity Instance: SC_RegSHIFTER:SC_RegSHIFTER_u0
+ 25. Parameter Settings for User Entity Instance: SC_RegSHIFTER:SC_RegSHIFTER_u1
+ 26. Parameter Settings for User Entity Instance: SC_RegRANDOM:SC_RegRANDOM_u0
+ 27. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7
+ 28. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u6
+ 29. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u5
+ 30. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u4
+ 31. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u3
+ 32. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u2
+ 33. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u1
+ 34. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u0
+ 35. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u17
+ 36. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u16
+ 37. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u15
+ 38. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u14
+ 39. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u13
+ 40. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u12
+ 41. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u11
+ 42. Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u10
+ 43. Parameter Settings for User Entity Instance: SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u0
+ 44. Parameter Settings for User Entity Instance: CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u0
+ 45. Parameter Settings for User Entity Instance: SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u1
+ 46. Parameter Settings for User Entity Instance: CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u1
+ 47. Parameter Settings for User Entity Instance: matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0
+ 48. Port Connectivity Checks: "matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0"
+ 49. Port Connectivity Checks: "matrix_ctrl:matrix_ctrl_unit_0"
+ 50. Port Connectivity Checks: "SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1"
+ 51. Port Connectivity Checks: "CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u1"
+ 52. Port Connectivity Checks: "SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u1"
+ 53. Port Connectivity Checks: "SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0"
+ 54. Port Connectivity Checks: "CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u0"
+ 55. Port Connectivity Checks: "SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u0"
+ 56. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u10"
+ 57. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u11"
+ 58. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u12"
+ 59. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u13"
+ 60. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u14"
+ 61. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u15"
+ 62. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u16"
+ 63. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u17"
+ 64. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u0"
+ 65. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u1"
+ 66. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u2"
+ 67. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u3"
+ 68. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u4"
+ 69. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u5"
+ 70. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u6"
+ 71. Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7"
+ 72. Port Connectivity Checks: "SC_RegRANDOM:SC_RegRANDOM_u0"
+ 73. Port Connectivity Checks: "SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1"
+ 74. Port Connectivity Checks: "SC_RegSHIFTER:SC_RegSHIFTER_u1"
+ 75. Port Connectivity Checks: "SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0"
+ 76. Port Connectivity Checks: "SC_RegSHIFTER:SC_RegSHIFTER_u0"
+ 77. Post-Synthesis Netlist Statistics for Top Partition
+ 78. Elapsed Time Per Partition
+ 79. Analysis & Synthesis Messages
+ 80. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Nov 24 16:48:59 2023       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                      ; BB_SYSTEM                                   ;
+; Top-level Entity Name              ; BB_SYSTEM                                   ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 292                                         ;
+;     Total combinational functions  ; 288                                         ;
+;     Dedicated logic registers      ; 166                                         ;
+; Total registers                    ; 166                                         ;
+; Total pins                         ; 22                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; BB_SYSTEM          ; BB_SYSTEM          ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation              ; 4                  ;                    ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                     ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; rtl/shift_reg_start_done.v       ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/shift_reg_start_done.v ;         ;
+; rtl/max7219_ctrl.v               ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v         ;         ;
+; rtl/SC_DEBOUNCE1.v               ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_DEBOUNCE1.v         ;         ;
+; BB_SYSTEM.v                      ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v                ;         ;
+; rtl/SC_RegRANDOM.v               ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegRANDOM.v         ;         ;
+; rtl/SC_RegSHIFTER.v              ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegSHIFTER.v        ;         ;
+; rtl/SC_STATEMACHINEPOINT.v       ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_STATEMACHINEPOINT.v ;         ;
+; rtl/SC_STATEMACHINEBACKG.v       ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_STATEMACHINEBACKG.v ;         ;
+; rtl/SC_RegBACKGTYPE.v            ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegBACKGTYPE.v      ;         ;
+; rtl/CC_BIN2BCD1.v                ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_BIN2BCD1.v          ;         ;
+; rtl/CC_SEVENSEG1.v               ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_SEVENSEG1.v         ;         ;
+; rtl/SC_upSPEEDCOUNTER.v          ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_upSPEEDCOUNTER.v    ;         ;
+; rtl/CC_SPEEDCOMPARATOR.v         ; yes             ; User Verilog HDL File  ; C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_SPEEDCOMPARATOR.v   ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimated Total logic elements              ; 292                      ;
+;                                             ;                          ;
+; Total combinational functions               ; 288                      ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 127                      ;
+;     -- 3 input functions                    ; 42                       ;
+;     -- <=2 input functions                  ; 119                      ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 210                      ;
+;     -- arithmetic mode                      ; 78                       ;
+;                                             ;                          ;
+; Total registers                             ; 166                      ;
+;     -- Dedicated logic registers            ; 166                      ;
+;     -- I/O registers                        ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 22                       ;
+;                                             ;                          ;
+; Embedded Multiplier 9-bit elements          ; 0                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; BB_SYSTEM_CLOCK_50~input ;
+; Maximum fan-out                             ; 166                      ;
+; Total fan-out                               ; 1460                     ;
+; Average fan-out                             ; 2.93                     ;
++---------------------------------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Entity Name          ; Library Name ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+----------------------+--------------+
+; |BB_SYSTEM                                               ; 288 (4)             ; 166 (0)                   ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |BB_SYSTEM                                                                                 ; BB_SYSTEM            ; work         ;
+;    |CC_SEVENSEG1:CC_SEVENSEG1_u0|                        ; 19 (19)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CC_SEVENSEG1:CC_SEVENSEG1_u0                                                    ; CC_SEVENSEG1         ; work         ;
+;    |SC_DEBOUNCE1:SC_DEBOUNCE1_u0|                        ; 26 (26)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_DEBOUNCE1:SC_DEBOUNCE1_u0                                                    ; SC_DEBOUNCE1         ; work         ;
+;    |SC_DEBOUNCE1:SC_DEBOUNCE1_u1|                        ; 26 (26)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_DEBOUNCE1:SC_DEBOUNCE1_u1                                                    ; SC_DEBOUNCE1         ; work         ;
+;    |SC_DEBOUNCE1:SC_DEBOUNCE1_u2|                        ; 26 (26)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_DEBOUNCE1:SC_DEBOUNCE1_u2                                                    ; SC_DEBOUNCE1         ; work         ;
+;    |SC_DEBOUNCE1:SC_DEBOUNCE1_u3|                        ; 26 (26)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_DEBOUNCE1:SC_DEBOUNCE1_u3                                                    ; SC_DEBOUNCE1         ; work         ;
+;    |SC_DEBOUNCE1:SC_DEBOUNCE1_u4|                        ; 26 (26)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_DEBOUNCE1:SC_DEBOUNCE1_u4                                                    ; SC_DEBOUNCE1         ; work         ;
+;    |SC_RegSHIFTER:SC_RegSHIFTER_u0|                      ; 21 (21)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_RegSHIFTER:SC_RegSHIFTER_u0                                                  ; SC_RegSHIFTER        ; work         ;
+;    |SC_RegSHIFTER:SC_RegSHIFTER_u1|                      ; 21 (21)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_RegSHIFTER:SC_RegSHIFTER_u1                                                  ; SC_RegSHIFTER        ; work         ;
+;    |SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|        ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0                                    ; SC_STATEMACHINEPOINT ; work         ;
+;    |SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|        ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1                                    ; SC_STATEMACHINEPOINT ; work         ;
+;    |matrix_ctrl:matrix_ctrl_unit_0|                      ; 78 (34)             ; 52 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0                                                  ; matrix_ctrl          ; work         ;
+;       |shift_reg_start_done:shift_reg_start_done_unit_0| ; 44 (44)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0 ; shift_reg_start_done ; work         ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|state_reg                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
++----------------------------------------+----------------------------------------+----------------------------+------------------------------------+------------------------+------------------------------------+------------------------+-------------------------------------+-------------------------+---------------------------------+---------------------+---------------------------------------+---------------------------+------------------------------------+------------------------+---------------------+-----------------+----------------+
+; Name                                   ; state_reg.DISPLAY_TEST_OFF_WAIT2FINISH ; state_reg.DISPLAY_TEST_OFF ; state_reg.DISPLAY_TEST_WAIT2FINISH ; state_reg.DISPLAY_TEST ; state_reg.DIS_SHUTDOWN_WAIT2FINISH ; state_reg.DIS_SHUTDOWN ; state_reg.SET_SCAN_MODE_WAIT2FINISH ; state_reg.SET_SCAN_MODE ; state_reg.INTENSITY_WAIT2FINISH ; state_reg.INTENSITY ; state_reg.SET_DECODE_MODE_WAIT2FINISH ; state_reg.SET_DECODE_MODE ; state_reg.UPDATE_FRAME_WAIT2FINISH ; state_reg.UPDATE_FRAME ; state_reg.MAIN_LOOP ; state_reg.START ; state_reg.STOP ;
++----------------------------------------+----------------------------------------+----------------------------+------------------------------------+------------------------+------------------------------------+------------------------+-------------------------------------+-------------------------+---------------------------------+---------------------+---------------------------------------+---------------------------+------------------------------------+------------------------+---------------------+-----------------+----------------+
+; state_reg.START                        ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 0               ; 0              ;
+; state_reg.MAIN_LOOP                    ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 1                   ; 1               ; 0              ;
+; state_reg.UPDATE_FRAME                 ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 1                      ; 0                   ; 1               ; 0              ;
+; state_reg.UPDATE_FRAME_WAIT2FINISH     ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 1                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.SET_DECODE_MODE              ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 1                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.SET_DECODE_MODE_WAIT2FINISH  ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 1                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.INTENSITY                    ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 1                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.INTENSITY_WAIT2FINISH        ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 1                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.SET_SCAN_MODE                ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 1                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.SET_SCAN_MODE_WAIT2FINISH    ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 1                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.DIS_SHUTDOWN                 ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 1                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.DIS_SHUTDOWN_WAIT2FINISH     ; 0                                      ; 0                          ; 0                                  ; 0                      ; 1                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.DISPLAY_TEST                 ; 0                                      ; 0                          ; 0                                  ; 1                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.DISPLAY_TEST_WAIT2FINISH     ; 0                                      ; 0                          ; 1                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.DISPLAY_TEST_OFF             ; 0                                      ; 1                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.DISPLAY_TEST_OFF_WAIT2FINISH ; 1                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 0              ;
+; state_reg.STOP                         ; 0                                      ; 0                          ; 0                                  ; 0                      ; 0                                  ; 0                      ; 0                                   ; 0                       ; 0                               ; 0                   ; 0                                     ; 0                         ; 0                                  ; 0                      ; 0                   ; 1               ; 1              ;
++----------------------------------------+----------------------------------------+----------------------------+------------------------------------+------------------------+------------------------------------+------------------------+-------------------------------------+-------------------------+---------------------------------+---------------------+---------------------------------------+---------------------------+------------------------------------+------------------------+---------------------+-----------------+----------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |BB_SYSTEM|SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register                                                                                                              ;
++----------------------------------+---------------------------------+----------------------------------+------------------------------+------------------------------+-------------------------------+
+; Name                             ; STATE_Register.STATE_CHECK_LOAD ; STATE_Register.STATE_CHECK_START ; STATE_Register.STATE_START_0 ; STATE_Register.STATE_RESET_0 ; STATE_Register.STATE_SENDLOAD ;
++----------------------------------+---------------------------------+----------------------------------+------------------------------+------------------------------+-------------------------------+
+; STATE_Register.STATE_RESET_0     ; 0                               ; 0                                ; 0                            ; 0                            ; 0                             ;
+; STATE_Register.STATE_START_0     ; 0                               ; 0                                ; 1                            ; 1                            ; 0                             ;
+; STATE_Register.STATE_CHECK_START ; 0                               ; 1                                ; 0                            ; 1                            ; 0                             ;
+; STATE_Register.STATE_CHECK_LOAD  ; 1                               ; 0                                ; 0                            ; 1                            ; 0                             ;
+; STATE_Register.STATE_SENDLOAD    ; 0                               ; 0                                ; 0                            ; 1                            ; 1                             ;
++----------------------------------+---------------------------------+----------------------------------+------------------------------+------------------------------+-------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |BB_SYSTEM|SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register                                                                                                              ;
++----------------------------------+---------------------------------+----------------------------------+------------------------------+------------------------------+-------------------------------+
+; Name                             ; STATE_Register.STATE_CHECK_LOAD ; STATE_Register.STATE_CHECK_START ; STATE_Register.STATE_START_0 ; STATE_Register.STATE_RESET_0 ; STATE_Register.STATE_SENDLOAD ;
++----------------------------------+---------------------------------+----------------------------------+------------------------------+------------------------------+-------------------------------+
+; STATE_Register.STATE_RESET_0     ; 0                               ; 0                                ; 0                            ; 0                            ; 0                             ;
+; STATE_Register.STATE_START_0     ; 0                               ; 0                                ; 1                            ; 1                            ; 0                             ;
+; STATE_Register.STATE_CHECK_START ; 0                               ; 1                                ; 0                            ; 1                            ; 0                             ;
+; STATE_Register.STATE_CHECK_LOAD  ; 1                               ; 0                                ; 0                            ; 1                            ; 0                             ;
+; STATE_Register.STATE_SENDLOAD    ; 0                               ; 0                                ; 0                            ; 1                            ; 1                             ;
++----------------------------------+---------------------------------+----------------------------------+------------------------------+------------------------------+-------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |BB_SYSTEM|SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Register                                                                                                                                                                                            ;
++------------------------------+------------------------------+------------------------------+-----------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+
+; Name                         ; STATE_Register.STATE_CHECK_1 ; STATE_Register.STATE_RIGHT_0 ; STATE_Register.STATE_LEFT_0 ; STATE_Register.STATE_INIT_1 ; STATE_Register.STATE_INIT_0 ; STATE_Register.STATE_CHECK_0 ; STATE_Register.STATE_START_0 ; STATE_Register.STATE_RESET_0 ;
++------------------------------+------------------------------+------------------------------+-----------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+
+; STATE_Register.STATE_RESET_0 ; 0                            ; 0                            ; 0                           ; 0                           ; 0                           ; 0                            ; 0                            ; 0                            ;
+; STATE_Register.STATE_START_0 ; 0                            ; 0                            ; 0                           ; 0                           ; 0                           ; 0                            ; 1                            ; 1                            ;
+; STATE_Register.STATE_CHECK_0 ; 0                            ; 0                            ; 0                           ; 0                           ; 0                           ; 1                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_INIT_0  ; 0                            ; 0                            ; 0                           ; 0                           ; 1                           ; 0                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_INIT_1  ; 0                            ; 0                            ; 0                           ; 1                           ; 0                           ; 0                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_LEFT_0  ; 0                            ; 0                            ; 1                           ; 0                           ; 0                           ; 0                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_RIGHT_0 ; 0                            ; 1                            ; 0                           ; 0                           ; 0                           ; 0                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_CHECK_1 ; 1                            ; 0                            ; 0                           ; 0                           ; 0                           ; 0                            ; 0                            ; 1                            ;
++------------------------------+------------------------------+------------------------------+-----------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |BB_SYSTEM|SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Register                                                                                                                                                                                            ;
++------------------------------+------------------------------+------------------------------+-----------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+
+; Name                         ; STATE_Register.STATE_CHECK_1 ; STATE_Register.STATE_RIGHT_0 ; STATE_Register.STATE_LEFT_0 ; STATE_Register.STATE_INIT_1 ; STATE_Register.STATE_INIT_0 ; STATE_Register.STATE_CHECK_0 ; STATE_Register.STATE_START_0 ; STATE_Register.STATE_RESET_0 ;
++------------------------------+------------------------------+------------------------------+-----------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+
+; STATE_Register.STATE_RESET_0 ; 0                            ; 0                            ; 0                           ; 0                           ; 0                           ; 0                            ; 0                            ; 0                            ;
+; STATE_Register.STATE_START_0 ; 0                            ; 0                            ; 0                           ; 0                           ; 0                           ; 0                            ; 1                            ; 1                            ;
+; STATE_Register.STATE_CHECK_0 ; 0                            ; 0                            ; 0                           ; 0                           ; 0                           ; 1                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_INIT_0  ; 0                            ; 0                            ; 0                           ; 0                           ; 1                           ; 0                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_INIT_1  ; 0                            ; 0                            ; 0                           ; 1                           ; 0                           ; 0                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_LEFT_0  ; 0                            ; 0                            ; 1                           ; 0                           ; 0                           ; 0                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_RIGHT_0 ; 0                            ; 1                            ; 0                           ; 0                           ; 0                           ; 0                            ; 0                            ; 1                            ;
+; STATE_Register.STATE_CHECK_1 ; 1                            ; 0                            ; 0                           ; 0                           ; 0                           ; 0                            ; 0                            ; 1                            ;
++------------------------------+------------------------------+------------------------------+-----------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                              ;
++----------------------------------------------------+----------------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                                ; Free of Timing Hazards ;
++----------------------------------------------------+----------------------------------------------------+------------------------+
+; matrix_ctrl:matrix_ctrl_unit_0|ctrl_sr[1]          ; matrix_ctrl:matrix_ctrl_unit_0|state_reg.MAIN_LOOP ; yes                    ;
+; matrix_ctrl:matrix_ctrl_unit_0|ctrl_sr[0]          ; matrix_ctrl:matrix_ctrl_unit_0|state_reg.MAIN_LOOP ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                                                    ;                        ;
++----------------------------------------------------+----------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                    ;
++-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+; Register name                                                                 ; Reason for Removal                                                                    ;
++-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+; SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u1|upSPEEDCOUNTER_Register[0..24]         ; Lost fanout                                                                           ;
+; SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u0|upSPEEDCOUNTER_Register[0..24]         ; Lost fanout                                                                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|Trig_Register1                                 ; Merged with matrix_ctrl:matrix_ctrl_unit_0|clk_driver_reg~0                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|clk_driver_reg~3                               ; Merged with CC_SEVENSEG1:CC_SEVENSEG1_u0|count[0]                                     ;
+; matrix_ctrl:matrix_ctrl_unit_0|clk_driver_reg~2                               ; Merged with CC_SEVENSEG1:CC_SEVENSEG1_u0|count[1]                                     ;
+; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[3..7]                         ; Lost fanout                                                                           ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u0|RegBACKGTYPE_Register[0]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u10|RegBACKGTYPE_Register[0]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u0|RegBACKGTYPE_Register[2]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u10|RegBACKGTYPE_Register[2]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u0|RegBACKGTYPE_Register[1]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u10|RegBACKGTYPE_Register[1]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u0|RegBACKGTYPE_Register[3]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u10|RegBACKGTYPE_Register[3]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u1|RegBACKGTYPE_Register[0]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u11|RegBACKGTYPE_Register[0]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u1|RegBACKGTYPE_Register[2]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u11|RegBACKGTYPE_Register[2]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u1|RegBACKGTYPE_Register[1]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u11|RegBACKGTYPE_Register[1]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u1|RegBACKGTYPE_Register[3]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u11|RegBACKGTYPE_Register[3]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u2|RegBACKGTYPE_Register[0]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u12|RegBACKGTYPE_Register[0]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u2|RegBACKGTYPE_Register[2]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u12|RegBACKGTYPE_Register[2]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u2|RegBACKGTYPE_Register[1]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u12|RegBACKGTYPE_Register[1]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u2|RegBACKGTYPE_Register[3]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u12|RegBACKGTYPE_Register[3]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u3|RegBACKGTYPE_Register[0]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u13|RegBACKGTYPE_Register[0]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u3|RegBACKGTYPE_Register[2]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u13|RegBACKGTYPE_Register[2]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u3|RegBACKGTYPE_Register[1]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u13|RegBACKGTYPE_Register[1]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u3|RegBACKGTYPE_Register[3]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u13|RegBACKGTYPE_Register[3]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u4|RegBACKGTYPE_Register[0]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u14|RegBACKGTYPE_Register[0]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u4|RegBACKGTYPE_Register[2]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u14|RegBACKGTYPE_Register[2]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u4|RegBACKGTYPE_Register[1]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u14|RegBACKGTYPE_Register[1]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u4|RegBACKGTYPE_Register[3]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u14|RegBACKGTYPE_Register[3]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u5|RegBACKGTYPE_Register[0]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u15|RegBACKGTYPE_Register[0]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u5|RegBACKGTYPE_Register[2]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u15|RegBACKGTYPE_Register[2]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u5|RegBACKGTYPE_Register[1]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u15|RegBACKGTYPE_Register[1]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u5|RegBACKGTYPE_Register[3]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u15|RegBACKGTYPE_Register[3]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u6|RegBACKGTYPE_Register[0]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u16|RegBACKGTYPE_Register[0]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u6|RegBACKGTYPE_Register[2]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u16|RegBACKGTYPE_Register[2]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u6|RegBACKGTYPE_Register[1]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u16|RegBACKGTYPE_Register[1]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u6|RegBACKGTYPE_Register[3]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u16|RegBACKGTYPE_Register[3]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7|RegBACKGTYPE_Register[0]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u17|RegBACKGTYPE_Register[0]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7|RegBACKGTYPE_Register[2]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u17|RegBACKGTYPE_Register[2]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7|RegBACKGTYPE_Register[1]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u17|RegBACKGTYPE_Register[1]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7|RegBACKGTYPE_Register[3]                   ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegBACKGTYPE:SC_RegBACKGTYPE_u17|RegBACKGTYPE_Register[3]                  ; Stuck at GND due to stuck port data_in                                                ;
+; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[0..2]                         ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_CHECK_LOAD  ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_CHECK_LOAD  ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_SENDLOAD    ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_SENDLOAD    ; Lost fanout                                                                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg~21                                   ; Lost fanout                                                                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg~22                                   ; Lost fanout                                                                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg~23                                   ; Lost fanout                                                                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg~25                                   ; Lost fanout                                                                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg~26                                   ; Lost fanout                                                                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg~27                                   ; Lost fanout                                                                           ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg~28                                   ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register~4                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register~5                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register~7                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register~4                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register~5                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register~7                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Register~4                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Register~5                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Register~6                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Register~7                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Register~4                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Register~5                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Register~6                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Register~7                 ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_RESET_0     ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_START_0     ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_CHECK_START ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_RESET_0     ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_START_0     ; Lost fanout                                                                           ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_CHECK_START ; Lost fanout                                                                           ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Register.STATE_START_0     ; Merged with SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Register.STATE_START_0 ;
+; SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Register.STATE_RESET_0     ; Merged with SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Register.STATE_RESET_0 ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg.DISPLAY_TEST                         ; Stuck at GND due to stuck port data_in                                                ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg.STOP                                 ; Stuck at GND due to stuck port data_in                                                ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg.DISPLAY_TEST_WAIT2FINISH             ; Stuck at GND due to stuck port data_in                                                ;
+; matrix_ctrl:matrix_ctrl_unit_0|clk_driver_reg~1                               ; Merged with CC_SEVENSEG1:CC_SEVENSEG1_u0|count[2]                                     ;
+; CC_SEVENSEG1:CC_SEVENSEG1_u0|count[3]                                         ; Merged with matrix_ctrl:matrix_ctrl_unit_0|clk_driver_reg~0                           ;
+; Total Number of Removed Registers = 163                                       ;                                                                                       ;
++-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                              ;
++------------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; Register name                                                                ; Reason for Removal        ; Registers Removed due to This Register                                        ;
++------------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[7]                           ; Lost Fanouts              ; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[6],                           ;
+;                                                                              ;                           ; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[5],                           ;
+;                                                                              ;                           ; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[4],                           ;
+;                                                                              ;                           ; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[3],                           ;
+;                                                                              ;                           ; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[2]                            ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_CHECK_LOAD ; Lost Fanouts              ; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_RESET_0,    ;
+;                                                                              ;                           ; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_START_0,    ;
+;                                                                              ;                           ; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1|STATE_Register.STATE_CHECK_START ;
+; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_CHECK_LOAD ; Lost Fanouts              ; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_RESET_0,    ;
+;                                                                              ;                           ; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_START_0,    ;
+;                                                                              ;                           ; SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0|STATE_Register.STATE_CHECK_START ;
+; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[0]                           ; Lost Fanouts              ; SC_RegRANDOM:SC_RegRANDOM_u0|RegRANDOM_Register[1]                            ;
+; matrix_ctrl:matrix_ctrl_unit_0|state_reg.DISPLAY_TEST                        ; Stuck at GND              ; matrix_ctrl:matrix_ctrl_unit_0|state_reg.DISPLAY_TEST_WAIT2FINISH             ;
+;                                                                              ; due to stuck port data_in ;                                                                               ;
++------------------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 166   ;
+; Number of registers using Synchronous Clear  ; 72    ;
+; Number of registers using Synchronous Load   ; 10    ;
+; Number of registers using Asynchronous Clear ; 96    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 50    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0|cnt_reg[8] ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0|r_reg[13]  ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0|r_reg[10]  ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |BB_SYSTEM|SC_RegSHIFTER:SC_RegSHIFTER_u1|RegSHIFTER_Register[5]                                      ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |BB_SYSTEM|SC_RegSHIFTER:SC_RegSHIFTER_u0|RegSHIFTER_Register[3]                                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |BB_SYSTEM|SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1|STATE_Signal                                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |BB_SYSTEM|SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0|STATE_Signal                                  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |BB_SYSTEM|matrix_ctrl:matrix_ctrl_unit_0|state_reg                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM ;
++---------------------------+-------+---------------------------------------+
+; Parameter Name            ; Value ; Type                                  ;
++---------------------------+-------+---------------------------------------+
+; DATAWIDTH_BUS             ; 8     ; Signed Integer                        ;
+; PRESCALER_DATAWIDTH       ; 23    ; Signed Integer                        ;
+; DISPLAY_DATAWIDTH         ; 12    ; Signed Integer                        ;
+; DATA_FIXED_INITREGBACKG_7 ; 0000  ; Unsigned Binary                       ;
+; DATA_FIXED_INITREGBACKG_6 ; 0000  ; Unsigned Binary                       ;
+; DATA_FIXED_INITREGBACKG_5 ; 0000  ; Unsigned Binary                       ;
+; DATA_FIXED_INITREGBACKG_4 ; 0000  ; Unsigned Binary                       ;
+; DATA_FIXED_INITREGBACKG_3 ; 0000  ; Unsigned Binary                       ;
+; DATA_FIXED_INITREGBACKG_2 ; 0000  ; Unsigned Binary                       ;
+; DATA_FIXED_INITREGBACKG_1 ; 0000  ; Unsigned Binary                       ;
+; DATA_FIXED_INITREGBACKG_0 ; 0000  ; Unsigned Binary                       ;
+; DATA_FIXED_INITREGPOINTS  ; 0010  ; Unsigned Binary                       ;
++---------------------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 11    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u1 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 11    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u2 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 11    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u3 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 11    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u4 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 11    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegSHIFTER:SC_RegSHIFTER_u0 ;
++----------------------+-------+----------------------------------------------+
+; Parameter Name       ; Value ; Type                                         ;
++----------------------+-------+----------------------------------------------+
+; RegSHIFTER_DATAWIDTH ; 8     ; Signed Integer                               ;
++----------------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegSHIFTER:SC_RegSHIFTER_u1 ;
++----------------------+-------+----------------------------------------------+
+; Parameter Name       ; Value ; Type                                         ;
++----------------------+-------+----------------------------------------------+
+; RegSHIFTER_DATAWIDTH ; 8     ; Signed Integer                               ;
++----------------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegRANDOM:SC_RegRANDOM_u0 ;
++---------------------+-------+---------------------------------------------+
+; Parameter Name      ; Value ; Type                                        ;
++---------------------+-------+---------------------------------------------+
+; RegRANDOM_DATAWIDTH ; 8     ; Signed Integer                              ;
++---------------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7 ;
++-------------------------+----------+--------------------------------------------+
+; Parameter Name          ; Value    ; Type                                       ;
++-------------------------+----------+--------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                             ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                            ;
++-------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u6 ;
++-------------------------+----------+--------------------------------------------+
+; Parameter Name          ; Value    ; Type                                       ;
++-------------------------+----------+--------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                             ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                            ;
++-------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u5 ;
++-------------------------+----------+--------------------------------------------+
+; Parameter Name          ; Value    ; Type                                       ;
++-------------------------+----------+--------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                             ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                            ;
++-------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u4 ;
++-------------------------+----------+--------------------------------------------+
+; Parameter Name          ; Value    ; Type                                       ;
++-------------------------+----------+--------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                             ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                            ;
++-------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u3 ;
++-------------------------+----------+--------------------------------------------+
+; Parameter Name          ; Value    ; Type                                       ;
++-------------------------+----------+--------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                             ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                            ;
++-------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u2 ;
++-------------------------+----------+--------------------------------------------+
+; Parameter Name          ; Value    ; Type                                       ;
++-------------------------+----------+--------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                             ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                            ;
++-------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u1 ;
++-------------------------+----------+--------------------------------------------+
+; Parameter Name          ; Value    ; Type                                       ;
++-------------------------+----------+--------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                             ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                            ;
++-------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u0 ;
++-------------------------+----------+--------------------------------------------+
+; Parameter Name          ; Value    ; Type                                       ;
++-------------------------+----------+--------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                             ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                            ;
++-------------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u17 ;
++-------------------------+----------+---------------------------------------------+
+; Parameter Name          ; Value    ; Type                                        ;
++-------------------------+----------+---------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                              ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                             ;
++-------------------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u16 ;
++-------------------------+----------+---------------------------------------------+
+; Parameter Name          ; Value    ; Type                                        ;
++-------------------------+----------+---------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                              ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                             ;
++-------------------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u15 ;
++-------------------------+----------+---------------------------------------------+
+; Parameter Name          ; Value    ; Type                                        ;
++-------------------------+----------+---------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                              ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                             ;
++-------------------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u14 ;
++-------------------------+----------+---------------------------------------------+
+; Parameter Name          ; Value    ; Type                                        ;
++-------------------------+----------+---------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                              ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                             ;
++-------------------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u13 ;
++-------------------------+----------+---------------------------------------------+
+; Parameter Name          ; Value    ; Type                                        ;
++-------------------------+----------+---------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                              ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                             ;
++-------------------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u12 ;
++-------------------------+----------+---------------------------------------------+
+; Parameter Name          ; Value    ; Type                                        ;
++-------------------------+----------+---------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                              ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                             ;
++-------------------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u11 ;
++-------------------------+----------+---------------------------------------------+
+; Parameter Name          ; Value    ; Type                                        ;
++-------------------------+----------+---------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                              ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                             ;
++-------------------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_RegBACKGTYPE:SC_RegBACKGTYPE_u10 ;
++-------------------------+----------+---------------------------------------------+
+; Parameter Name          ; Value    ; Type                                        ;
++-------------------------+----------+---------------------------------------------+
+; RegBACKGTYPE_DATAWIDTH  ; 8        ; Signed Integer                              ;
+; DATA_FIXED_INITREGBACKG ; 00000000 ; Unsigned Binary                             ;
++-------------------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u0 ;
++--------------------------+-------+--------------------------------------------------+
+; Parameter Name           ; Value ; Type                                             ;
++--------------------------+-------+--------------------------------------------------+
+; upSPEEDCOUNTER_DATAWIDTH ; 25    ; Signed Integer                                   ;
++--------------------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u0 ;
++---------------------------+-------+---------------------------------------------------+
+; Parameter Name            ; Value ; Type                                              ;
++---------------------------+-------+---------------------------------------------------+
+; SPEEDCOMPARATOR_DATAWIDTH ; 25    ; Signed Integer                                    ;
++---------------------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u1 ;
++--------------------------+-------+--------------------------------------------------+
+; Parameter Name           ; Value ; Type                                             ;
++--------------------------+-------+--------------------------------------------------+
+; upSPEEDCOUNTER_DATAWIDTH ; 25    ; Signed Integer                                   ;
++--------------------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u1 ;
++---------------------------+-------+---------------------------------------------------+
+; Parameter Name            ; Value ; Type                                              ;
++---------------------------+-------+---------------------------------------------------+
+; SPEEDCOMPARATOR_DATAWIDTH ; 25    ; Signed Integer                                    ;
++---------------------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0 ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0" ;
++-----------+-------+----------+------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                      ;
++-----------+-------+----------+------------------------------------------------------------------------------+
+; d[15..12] ; Input ; Info     ; Stuck at GND                                                                 ;
++-----------+-------+----------+------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "matrix_ctrl:matrix_ctrl_unit_0" ;
++--------------+-------+----------+--------------------------+
+; Port         ; Type  ; Severity ; Details                  ;
++--------------+-------+----------+--------------------------+
+; intensity[3] ; Input ; Info     ; Stuck at VCC             ;
+; intensity[2] ; Input ; Info     ; Stuck at GND             ;
+; intensity[1] ; Input ; Info     ; Stuck at VCC             ;
+; intensity[0] ; Input ; Info     ; Stuck at GND             ;
++--------------+-------+----------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u1"                                                                    ;
++-----------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                              ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_STATEMACHINEBACKG_clear_OutLow ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; SC_STATEMACHINEBACKG_upcount_out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u1"                                                                                                                                                         ;
++-------------------------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                          ; Type  ; Severity ; Details                                                                                                                                                                   ;
++-------------------------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; CC_SPEEDCOMPARATOR_data_InBUS ; Input ; Warning  ; Input port expression (23 bits) is smaller than the input port (25 bits) it drives.  Extra input bit(s) "CC_SPEEDCOMPARATOR_data_InBUS[24..23]" will be connected to GND. ;
++-------------------------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u1"                                                                                                                                         ;
++---------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                            ; Type   ; Severity ; Details                                                                                                                                              ;
++---------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+; SC_upSPEEDCOUNTER_upcount_InLow ; Input  ; Info     ; Stuck at GND                                                                                                                                         ;
+; SC_upSPEEDCOUNTER_data_OutBUS   ; Output ; Warning  ; Output or bidir port (25 bits) is wider than the port expression (23 bits) it drives; bit(s) "SC_upSPEEDCOUNTER_data_OutBUS[24..23]" have no fanouts ;
++---------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0"                                                                   ;
++----------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                             ; Type   ; Severity ; Details                                                                             ;
++----------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_STATEMACHINEBACKG_upcount_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u0"                                                                                                                                                         ;
++-------------------------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                          ; Type  ; Severity ; Details                                                                                                                                                                   ;
++-------------------------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; CC_SPEEDCOMPARATOR_data_InBUS ; Input ; Warning  ; Input port expression (23 bits) is smaller than the input port (25 bits) it drives.  Extra input bit(s) "CC_SPEEDCOMPARATOR_data_InBUS[24..23]" will be connected to GND. ;
++-------------------------------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u0"                                                                                                                                         ;
++---------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                            ; Type   ; Severity ; Details                                                                                                                                              ;
++---------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+; SC_upSPEEDCOUNTER_upcount_InLow ; Input  ; Info     ; Stuck at GND                                                                                                                                         ;
+; SC_upSPEEDCOUNTER_data_OutBUS   ; Output ; Warning  ; Output or bidir port (25 bits) is wider than the port expression (23 bits) it drives; bit(s) "SC_upSPEEDCOUNTER_data_OutBUS[24..23]" have no fanouts ;
++---------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u10"                                                                                                        ;
++-----------------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                                                  ;
++-----------------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; SC_RegBACKGTYPE_data_OutBUS_2REG        ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u11"                                                                                   ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u12"                                                                                   ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u13"                                                                                   ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u14"                                                                                   ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u15"                                                                                   ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u16"                                                                                   ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u17"                                                                                   ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u0"                                                                                                         ;
++-----------------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                                                  ;
++-----------------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; SC_RegBACKGTYPE_data_OutBUS_2REG        ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u1"                                                                                    ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u2"                                                                                    ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u3"                                                                                    ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u4"                                                                                    ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u5"                                                                                    ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u6"                                                                                    ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7"                                                                                    ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                    ; Type   ; Severity ; Details                                                                             ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; SC_RegBACKGTYPE_data_OutBUS_2DISP[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegRANDOM:SC_RegRANDOM_u0"                                                                                                                                   ;
++--------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                     ; Type  ; Severity ; Details                                                                                                                                      ;
++--------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; SC_RegRANDOM_clear_InLow ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u1"                                                                                                                                    ;
++-------------------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                                      ; Type  ; Severity ; Details                                                                                                                                      ;
++-------------------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; SC_STATEMACHINEPOINT_sidecomparator_InLow ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-------------------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegSHIFTER:SC_RegSHIFTER_u1"                                                                                                                                                            ;
++--------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                           ; Type   ; Severity ; Details                                                                                                                                                          ;
++--------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; SC_RegSHIFTER_data_OutBUS      ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (4 bits) it drives; bit(s) "SC_RegSHIFTER_data_OutBUS[7..4]" have no fanouts                     ;
+; SC_RegSHIFTER_data_InBUS       ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "SC_RegSHIFTER_data_InBUS[7..4]" will be connected to GND. ;
+; SC_RegSHIFTER_data_InBUS[3..2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                     ;
+; SC_RegSHIFTER_data_InBUS[5]    ; Input  ; Info     ; Stuck at VCC                                                                                                                                                     ;
+; SC_RegSHIFTER_data_InBUS[4]    ; Input  ; Info     ; Stuck at GND                                                                                                                                                     ;
++--------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0"                                                                                                                                    ;
++-------------------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                                      ; Type  ; Severity ; Details                                                                                                                                      ;
++-------------------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; SC_STATEMACHINEPOINT_sidecomparator_InLow ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-------------------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SC_RegSHIFTER:SC_RegSHIFTER_u0"                                                                                                                                                            ;
++--------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                           ; Type   ; Severity ; Details                                                                                                                                                          ;
++--------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; SC_RegSHIFTER_data_OutBUS      ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (4 bits) it drives; bit(s) "SC_RegSHIFTER_data_OutBUS[7..4]" have no fanouts                     ;
+; SC_RegSHIFTER_data_InBUS       ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "SC_RegSHIFTER_data_InBUS[7..4]" will be connected to GND. ;
+; SC_RegSHIFTER_data_InBUS[3..2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                     ;
+; SC_RegSHIFTER_data_InBUS[5]    ; Input  ; Info     ; Stuck at VCC                                                                                                                                                     ;
+; SC_RegSHIFTER_data_InBUS[4]    ; Input  ; Info     ; Stuck at GND                                                                                                                                                     ;
++--------------------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 22                          ;
+; cycloneiii_ff         ; 166                         ;
+;     CLR               ; 44                          ;
+;     CLR SLD           ; 2                           ;
+;     ENA CLR           ; 25                          ;
+;     ENA CLR SCLR      ; 17                          ;
+;     ENA CLR SLD       ; 8                           ;
+;     SCLR              ; 55                          ;
+;     plain             ; 15                          ;
+; cycloneiii_lcell_comb ; 293                         ;
+;     arith             ; 78                          ;
+;         2 data inputs ; 77                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 215                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 41                          ;
+;         4 data inputs ; 127                         ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.56                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Fri Nov 24 16:48:46 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/shift_reg_start_done.v
+    Info (12023): Found entity 1: shift_reg_start_done File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/shift_reg_start_done.v Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/max7219_ctrl.v
+    Info (12023): Found entity 1: matrix_ctrl File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_debounce1.v
+    Info (12023): Found entity 1: SC_DEBOUNCE1 File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_DEBOUNCE1.v Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file bb_system.v
+    Info (12023): Found entity 1: BB_SYSTEM File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regrandom.v
+    Info (12023): Found entity 1: SC_RegRANDOM File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegRANDOM.v Line: 3
+Warning (12019): Can't analyze file -- file SC_STATEMACHINEPOINT.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regshifter.v
+    Info (12023): Found entity 1: SC_RegSHIFTER File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegSHIFTER.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_statemachinepoint.v
+    Info (12023): Found entity 1: SC_STATEMACHINEPOINT File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_STATEMACHINEPOINT.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_statemachinebackg.v
+    Info (12023): Found entity 1: SC_STATEMACHINEBACKG File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_STATEMACHINEBACKG.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regbackgtype.v
+    Info (12023): Found entity 1: SC_RegBACKGTYPE File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_RegBACKGTYPE.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_bin2bcd1.v
+    Info (12023): Found entity 1: CC_BIN2BCD1 File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_BIN2BCD1.v Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_sevenseg1.v
+    Info (12023): Found entity 1: CC_SEVENSEG1 File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_SEVENSEG1.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_upcounter.v
+    Info (12023): Found entity 1: SC_upCOUNTER File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_upCOUNTER.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_upspeedcounter.v
+    Info (12023): Found entity 1: SC_upSPEEDCOUNTER File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_upSPEEDCOUNTER.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_speedcomparator.v
+    Info (12023): Found entity 1: CC_SPEEDCOMPARATOR File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_SPEEDCOMPARATOR.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_jugabilidad.v
+    Info (12023): Found entity 1: CC_Jugabilidad File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_Jugabilidad.v Line: 1
+Info (12127): Elaborating entity "BB_SYSTEM" for the top level hierarchy
+Info (12128): Elaborating entity "SC_DEBOUNCE1" for hierarchy "SC_DEBOUNCE1:SC_DEBOUNCE1_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 208
+Warning (10230): Verilog HDL assignment warning at SC_DEBOUNCE1.v(70): truncated value with size 32 to match size of target (11) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_DEBOUNCE1.v Line: 70
+Info (12128): Elaborating entity "SC_RegSHIFTER" for hierarchy "SC_RegSHIFTER:SC_RegSHIFTER_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 254
+Info (12128): Elaborating entity "SC_STATEMACHINEPOINT" for hierarchy "SC_STATEMACHINEPOINT:SC_STATEMACHINEPOINT_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 266
+Info (12128): Elaborating entity "SC_RegRANDOM" for hierarchy "SC_RegRANDOM:SC_RegRANDOM_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 311
+Info (12128): Elaborating entity "SC_RegBACKGTYPE" for hierarchy "SC_RegBACKGTYPE:SC_RegBACKGTYPE_u7" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 326
+Info (12128): Elaborating entity "SC_upSPEEDCOUNTER" for hierarchy "SC_upSPEEDCOUNTER:SC_upSPEEDCOUNTER_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 504
+Info (12128): Elaborating entity "CC_SPEEDCOMPARATOR" for hierarchy "CC_SPEEDCOMPARATOR:CC_SPEEDCOMPARATOR_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 509
+Info (12128): Elaborating entity "SC_STATEMACHINEBACKG" for hierarchy "SC_STATEMACHINEBACKG:SC_STATEMACHINEBACKG_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 520
+Info (10264): Verilog HDL Case Statement information at SC_STATEMACHINEBACKG.v(68): all case item expressions in this case statement are onehot File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/SC_STATEMACHINEBACKG.v Line: 68
+Info (12128): Elaborating entity "matrix_ctrl" for hierarchy "matrix_ctrl:matrix_ctrl_unit_0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 576
+Warning (10036): Verilog HDL or VHDL warning at max7219_ctrl.v(58): object "Trig_SignalNEG" assigned a value but never read File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 58
+Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(50): truncated value with size 32 to match size of target (4) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 50
+Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(51): truncated value with size 32 to match size of target (4) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 51
+Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(260): truncated value with size 32 to match size of target (4) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 260
+Warning (10240): Verilog HDL Always Construct warning at max7219_ctrl.v(154): inferring latch(es) for variable "ctrl_sr", which holds its previous value in one or more paths through the always construct File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 154
+Warning (10230): Verilog HDL assignment warning at max7219_ctrl.v(278): truncated value with size 32 to match size of target (3) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 278
+Info (10041): Inferred latch for "ctrl_sr[0]" at max7219_ctrl.v(154) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 154
+Info (10041): Inferred latch for "ctrl_sr[1]" at max7219_ctrl.v(154) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 154
+Info (12128): Elaborating entity "shift_reg_start_done" for hierarchy "matrix_ctrl:matrix_ctrl_unit_0|shift_reg_start_done:shift_reg_start_done_unit_0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/max7219_ctrl.v Line: 109
+Warning (10230): Verilog HDL assignment warning at shift_reg_start_done.v(69): truncated value with size 32 to match size of target (16) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/shift_reg_start_done.v Line: 69
+Info (12128): Elaborating entity "CC_BIN2BCD1" for hierarchy "CC_BIN2BCD1:CC_BIN2BCD1_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 592
+Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(36): truncated value with size 32 to match size of target (4) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_BIN2BCD1.v Line: 36
+Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(42): truncated value with size 32 to match size of target (4) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_BIN2BCD1.v Line: 42
+Warning (10230): Verilog HDL assignment warning at CC_BIN2BCD1.v(44): truncated value with size 32 to match size of target (4) File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/rtl/CC_BIN2BCD1.v Line: 44
+Info (12128): Elaborating entity "CC_SEVENSEG1" for hierarchy "CC_SEVENSEG1:CC_SEVENSEG1_u0" File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 611
+Warning (12241): 11 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[0]" is stuck at GND File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 60
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[1]" is stuck at GND File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 60
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[2]" is stuck at GND File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 60
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[3]" is stuck at GND File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 60
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[4]" is stuck at GND File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 60
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[5]" is stuck at GND File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 60
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[6]" is stuck at VCC File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 60
+    Warning (13410): Pin "BB_SYSTEM_display_OutBUS[7]" is stuck at GND File: C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.v Line: 60
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 89 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 314 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 292 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4768 megabytes
+    Info: Processing ended: Fri Nov 24 16:48:59 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:11
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/fgute/Downloads/OL1DQA19112023-2317PM-20231124T210128Z-001/QA19112023-2317PM/BB_SYSTEM.map.smsg.
+
+
